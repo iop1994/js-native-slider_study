@@ -1,5 +1,4 @@
 * {
-
     box-sizing: border-box;
 }
 
@@ -15,7 +14,6 @@ body {
 .fa-angle-left,
 .fa-angle-right {
     color: rgba(255, 255, 255, 0.4);
-
     font-size: 40px;
 }
 
@@ -28,13 +26,10 @@ body {
 
 .slides {
     position: relative;
-
     height: 100vh;
     margin: 0;
     padding: 0;
-
     list-style-type: none;
-
     background: #000000;
 }
 
@@ -42,18 +37,13 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
     padding: 40px;
-
-
     transition: opacity 1s;
-
     opacity: 0;
     background-position: 50% 50%;
     background-size: cover;
-
     font-size: 40px;
 }
 
@@ -67,14 +57,12 @@ body {
 
 .slide.active {
     z-index: 1;
-
     opacity: 1;
 }
 
 .controls {
     position: absolute;
     top: 0;
-
     width: 100%;
     height: 100%;
 }
@@ -86,51 +74,36 @@ body {
     z-index: 1;
     top: 0;
     bottom: 0;
-
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 }
 
 .control-pause {
     top: calc(50% - 20vh);
     left: calc(50% - 20vh);
-
     height: 0;
     padding: 0;
-
-
     transition: opacity 0.25s ease-out;
-
     opacity: 0;
 }
 
 .control-pause:hover,
 .control-pause:focus {
-
     transition: opacity 1s ease-in 0.5s;
-
     opacity: 1;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 .control-pause span {
     position: absolute;
-
     display: block;
-
-
     transform: translate(50%, 50%);
-
     opacity: 0;
 }
 
 .control-prev {
     left: 0;
-
     width: 10%;
 }
 

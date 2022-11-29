@@ -12,12 +12,12 @@ class SwipeCarousel extends Carousel {
         this.container.addEventListener('touchend', this._swipeEnd.bind(this));
     }
 
-    /* private, _swipeStart function */
+
     _swipeStart(e) {
         this.swipeStartX = e.changedTouches[0].pageX;
     }
 
-    /* private, _swipeEnd function */
+
     _swipeEnd(e) {
         this.swipeEndX = e.changedTouches[0].pageX;
         this.swipeStartX - this.swipeEndX > 100 && this.next();
